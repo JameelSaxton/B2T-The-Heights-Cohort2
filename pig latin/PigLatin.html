@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<h1 id="latin"></h1>
+	<script type="text/javascript">
+	// I used the variable prompt to enter the word.
+		var str = prompt("Enter Word")
+	// I used Dom so words can be shown on the web page, and used the slice method to take away the first character and end it with ay.
+		document.getElementById("latin").innerHTML = "This word in pig latin:"
+		+ str.slice(1, str.length)+(str.charAt(0)+ "ay")
+
+	</script>
+
+	</body>
+</html>
