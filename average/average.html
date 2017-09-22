@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<script type="text/javascript"> 
+		// wrote variables for grades 
+		var grade = [80, 77, 88, 95, 68]
+		var GA = (grade[0] + grade[1] + grade[2] + grade[3] + grade[4])/grade.length;
+		var letterGrade;
+		// Used the "if" statement to specify a block of JavaScript code to be executed if a condition is true.
+		if(GA < 60){ 
+			letterGrade = "F";
+		}
+		else if(GA < 70){
+			letterGrade = "D";
+		//Used "else if" to specify a new condition to test, if the first condition is false.
+		}
+		else if (GA < 79){
+			letterGrade = "C";
+		}
+		else if (GA < 89){
+			letterGrade = "B";
+		}
+		else {
+			letterGrade = "A";
+		}
+		console.log("student grade is " + letterGrade) 
+
+
+
+
+
+
+	</script>
+	
+
+	</body>
+</html>
