@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<p id="reading"></p>
+	<script type="text/javascript"> 
+	var library = [
+	{author: 'Bill Gates', title: 'The Road Aheads', readingStatus: true},
+	{author: 'Steve Jobs', title: 'Walter Isaacson', readingStatus: true},
+	{author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', readingStatus: false},
+
+	];
+	var text = "";
+	for (var i=0; i<library.length; i++){
+		//created a condition and incrementing the variable by one.
+		if(library[i].readingStatus == true){
+		text += " Already Read "+library[i].title+" by "+library[i].author+"<br/>";
+	// Line 18 going through the array to check if statment is true
+		}else{
+		text += " You need to read "+library[i].title+" by "+library[i].author+"<br/>";
+		// In line 22 the else is false then it states you need to read
+		}
+	}	
+		document.getElementById("reading").innerHTML = text;
+		// printed script to web page 
+	</script>
+
+	</body>
+</html>
